@@ -1,0 +1,86 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    
+}
+body{
+  background-image: url("https://dominofilm.vn/uploads/albums/2019/01/photo_5c495cf04fcea.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form-sign {
+   
+    margin-left:40rem;
+    margin-top:13.75rem;
+    background-color: transparent;
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 1px -9px 13px 0px rgb(0 0 0 / 48%), -3px 3px 7px 0px rgb(0 0 0 / 33%);
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+  }
+  
+  .input-container input {
+    background-color: #fff;
+    margin-left:19px ;
+    font-size: 0.875rem;
+    height: 3.2rem;
+    width: 290px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .submit {
+    margin-left:19px ;
+    margin-top: 10px;
+    cursor:pointer;
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: white;
+    color: #000;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 18.3rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+.submit:hover{
+  background-color: skyblue;
+}
+  .signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  .title-signup{
+    color:#fff;
+    
+  }

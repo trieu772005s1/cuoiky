@@ -1,0 +1,54 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.img{
+    margin-top: 10px;
+    border-radius:30px ;
+    width:25px;
+    height: 25px;
+}
+.title1{
+ display: flex;
+  font-size: 32px;
+  color: yellow;
+ margin: 0px;
+}
+.title{
+    font-size: 17px;
+    margin-top: -8px;
+    color: white;
+}
+.icon{
+    font-size: 12px;
+    margin-top:-7px ;
+    color: white;
+}
+.sign-out{
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  margin-left: 70rem;
+  margin-top: -60px;
+}
+.sign-out:hover .menu{
+  display: block;
+}
+.menu{
+    display: none;
+  position: absolute;
+  background-color: white;
+  margin-top: 60px;
+  margin-left: 50px;
+  width: 100px;
+  
+}
+button{
+    background-color: white;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
