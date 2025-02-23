@@ -1,16 +1,17 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import routes from './routes.js';
+import routes from './router.js';
 import dotenv from 'dotenv';
-import cors from 'cors'; // Thêm thư viện CORS
+import cors from 'cors';
 
+// Nạp biến môi trường từ file .env
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 // Middleware
-app.use(cors()); // Cho phép CORS từ mọi nguồn
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

@@ -7,10 +7,10 @@ const router = express.Router();
 
 // Đăng ký tài khoản
 router.post('/register', async (req, res) => {
-  const { username, password } = req.body;
+  const { username, password,email,numberphone } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
 
-  db.query('INSERT INTO users (username, password) VALUES (?, ?)', [username, hashedPassword], (err, result) => {
+  db.query('INSERT INTO users ( name_users , password_users,email,mumberphone_users) VALUES (?, ?)', [username, hashedPassword,email,numberphone], (err, result) => {
     if (err) return res.status(500).json({ error: 'Lỗi hệ thống' });
     res.status(201).json({ message: 'Đăng ký thành công' });
   });
@@ -45,17 +45,11 @@ router.get('/protected', (req, res) => {
   });
 });
 
-
 router.get('/greet', (req, res) => {
-  // Lấy dữ liệu từ query string
   const name = req.query.name || 'Guest';
   const age = req.query.age || 'unknown';
-
-  // Trả về phản hồi
   res.send(`Hello, ${name}! You are ${age} years old.`);
 });
-
-
 
 router.get('/hello', (req, res) => {
   res.json({ message: 'Xin chào' });
